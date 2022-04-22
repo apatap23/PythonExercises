@@ -12,4 +12,5 @@ while True:
             count += 1
             i = i.strip()
             print(count, i)
+
         break
