@@ -29,4 +29,12 @@ for word in words:
     else:
         dictCount[word] = dictCount.get(word) + 1
 
+max = 0
+
+for key in dictCount:
+    if dictCount[key] > max: 
+        max = dictCount.get(key)
+        i,j = dictCount.items[key]
+print(max)
 print(dictCount)
+dictCount.v
