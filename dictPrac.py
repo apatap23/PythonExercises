@@ -24,3 +24,7 @@ for email,count in dictCount.items():
         mostCount = count
         mostEmail = email
 print(mostEmail, mostCount)
+
+
+a = [1,2,3]
+a
