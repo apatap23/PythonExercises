@@ -1,4 +1,4 @@
 # Python Exercises
-## Author: Praise Apata
+### Author: Praise Apata
 
-### Programs from different exercises in Python 
+#### Programs from different exercises in Python 
