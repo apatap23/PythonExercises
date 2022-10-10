@@ -11,7 +11,16 @@ def highestSkillOverlap(fellowSkills):
         dictFellowCount[y] = dictFellowCount.get(y,0) + 1
     return max(dictFellowCount.keys())
         
+
+def fewerThanTargetDistinct(input, target):
+    inSet = set(input)
+    if len(inSet) < target:
+        return True
+    else:
+        return False
         
 
 print(removeDuplicate(["oliver","pixel","Pinky","oliver","pinky"]))
 print(highestSkillOverlap({"oliver": 3, "pixel": 1, "pinky": 3}))
+print(fewerThanTargetDistinct([1, 2, 2, 3, 3], 4 ))
+print(fewerThanTargetDistinct([1, 2, 2, 3, 3], 3 ))
