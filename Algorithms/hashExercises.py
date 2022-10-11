@@ -19,8 +19,24 @@ def fewerThanTargetDistinct(input, target):
     else:
         return False
         
+def numUniques(array: [int])-> int:
+    countDict = dict()
+    for i in array:
+        countDict[i]=countDict.get(i,0)+1
+    ansCount = 0
+    for num, count in countDict.items():
+        if count == 1:
+            ansCount += 1
+    return ansCount
 
+    
+
+    
 print(removeDuplicate(["oliver","pixel","Pinky","oliver","pinky"]))
 print(highestSkillOverlap({"oliver": 3, "pixel": 1, "pinky": 3}))
 print(fewerThanTargetDistinct([1, 2, 2, 3, 3], 4 ))
 print(fewerThanTargetDistinct([1, 2, 2, 3, 3], 3 ))
+print(numUniques([])) # 0
+print(numUniques([3, 1, 1, 2, 3, 1, 1, 1, 4])) # 2
+print(numUniques([1])) # 1
+
